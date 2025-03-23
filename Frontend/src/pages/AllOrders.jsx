@@ -23,7 +23,7 @@ const AllOrders = () => {
         const fetchOrders = async () => {
             try {
                 const response = await axios.get(
-                  "https://full-stack-book-store-gamma.vercel.app/api/v1/orders/get-all-orders",
+                  "https://book-store-three-iota.vercel.app/api/v1/orders/get-all-orders",
                   { headers }
                 );
                 const validOrders = response.data.data.filter(order => order.book);
@@ -49,7 +49,7 @@ const AllOrders = () => {
         try {
             // Backend se status update karwana
             const response = await axios.put(
-              `https://full-stack-book-store-gamma.vercel.app/api/v1/orders/update-status/${orderId}`,
+              `https://book-store-three-iota.vercel.app/api/v1/orders/update-status/${orderId}`,
               { status: newStatus }, // Updated status bhejo
               { headers }
             );
