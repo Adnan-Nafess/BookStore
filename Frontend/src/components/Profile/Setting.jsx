@@ -19,7 +19,7 @@ const Setting = () => {
   useEffect(() => {
     const fetch = async () => {
       try {
-      const response = await axios.get("http://localhost:3000/api/v1/users/get-user-information", {headers});
+      const response = await axios.get("https://book-store-three-iota.vercel.app/api/v1/users/get-user-information", {headers});
       setProfileData(response.data);
       setValue({ address: response.data.address });
       }catch (err) {
@@ -31,7 +31,7 @@ const Setting = () => {
 
   const submitAddress = async () => {
     try {
-      const response = await axios.put("http://localhost:3000/api/v1/users/update-address", value, { headers });
+      const response = await axios.put("https://book-store-three-iota.vercel.app/api/v1/users/update-address", value, { headers });
       alert(response.data.message);
     } catch (err) {
       console.log(err);
