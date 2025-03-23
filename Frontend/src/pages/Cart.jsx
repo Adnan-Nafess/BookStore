@@ -21,7 +21,7 @@ const Cart = () => {
       try {
         setIsLoading(true); // Start loading
         const response = await axios.get(
-          `https://full-stack-book-store-gamma.vercel.app/api/v1/carts/get-user-cart`,
+          `https://book-store-three-iota.vercel.app/api/v1/carts/get-user-cart`,
           { headers }
         );
         setCart(response.data.data || []);
@@ -46,7 +46,7 @@ const Cart = () => {
   const deleteItem = async (bookid) => {
     try {
       const response = await axios.put(
-        `https://full-stack-book-store-gamma.vercel.app/api/v1/carts/remove-from-cart/${bookid}`,
+        `https://book-store-three-iota.vercel.app/api/v1/carts/remove-from-cart/${bookid}`,
         {},
         { headers }
       );
@@ -61,7 +61,7 @@ const Cart = () => {
   const placeOrder = async () => {
     try {
       const response = await axios.post(
-        `https://full-stack-book-store-gamma.vercel.app/api/v1/orders/place-order`,
+        `https://book-store-three-iota.vercel.app/api/v1/orders/place-order`,
         { order: cart },
         { headers }
       );
