@@ -12,7 +12,7 @@ const AllBooks = () => {
     const fetch = async () => {
       try {
         const response = await axios.get(
-          "https://full-stack-book-store-gamma.vercel.app/api/v1/books/get-all-books"
+          "https://book-store-three-iota.vercel.app/api/v1/books/get-all-books"
         );
         setData(response.data.data || response.data.books); 
       } catch (error) {
