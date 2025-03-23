@@ -15,7 +15,7 @@ const Favourites = () => {
         const fetch = async () => {
             try {
                 const response = await axios.get(
-                    "http://localhost:3000/api/v1/favourites/get-favourite-books",
+                    "https://book-store-three-iota.vercel.app/api/v1/favourites/get-favourite-books",
                     { headers }
                 );
                 setFavourite(response.data.data);
