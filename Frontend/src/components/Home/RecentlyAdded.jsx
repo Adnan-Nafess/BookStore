@@ -11,7 +11,7 @@ const RecentlyAdded = () => {
         const fetch = async () => {
             try {
                 const response = await axios.get(
-                  "https://full-stack-book-store-gamma.vercel.app/api/v1/books/get-recent-books"
+                  "https://book-store-three-iota.vercel.app/api/v1/books/get-recent-books"
                 );
                 setData(response.data.data || response.data.books); 
             } catch (error) {
