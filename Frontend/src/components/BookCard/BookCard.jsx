@@ -12,7 +12,7 @@ const BookCard = ({ data, favourite }) => {
   const removeBookHandler = async () => {
     try {
       const response = await axios.put(
-        "https://full-stack-book-store-gamma.vercel.app/api/v1/favourites/delete-book-to-favourite",
+        "https://book-store-three-iota.vercel.app/api/v1/favourites/delete-book-to-favourite",
         {},
         { headers }
       );
