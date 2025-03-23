@@ -23,7 +23,7 @@ const SignUp = () => {
         alert("All fields are required");
       }else {
         const response = await axios.post(
-          "https://full-stack-book-store-gamma.vercel.app/api/v1/users/sign-up",
+          "https://book-store-three-iota.vercel.app/api/v1/users/sign-up",
           values
         );
         alert(response.data.message);
