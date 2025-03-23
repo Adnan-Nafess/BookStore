@@ -24,7 +24,7 @@ const Login = () => {
         alert("All fields are required");
       } else {
         const response = await axios.post(
-          "https://full-stack-book-store-gamma.vercel.app/api/v1/users/sign-in",
+          "https://book-store-three-iota.vercel.app/api/v1/users/sign-in",
           values
         );
         dispatch(authActions.login());
