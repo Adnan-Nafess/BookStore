@@ -18,7 +18,7 @@ const Profile = () => {
     try {
      const fetch = async () => {
        const response = await axios.get(
-         `https://book-store-three-iota.vercel.app/api/v1/users//get-user-information`,
+         `https://book-store-three-iota.vercel.app/api/v1/users/get-user-information`,
          { headers }
        );
        setProfile(response.data);
